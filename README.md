@@ -1,5 +1,7 @@
 # WTest-quintao
 
+MAIN Branch as the zip with the project. MASTER Branch as the project code to make pushs and pulls.
+
 APP FLOW:
 Primeiro ecrã tem duas opções:
 -> POSTAL CODES (1-2), contem a funcionalidade 1 e 2.
