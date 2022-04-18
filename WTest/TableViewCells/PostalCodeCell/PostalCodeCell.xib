@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="68" id="0d9-Wg-suz" customClass="PostalCodeCell" customModule="WTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0d9-Wg-suz" id="DsS-fw-AGu">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="68"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="####-###" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7aD-OU-HEP">
+                        <rect key="frame" x="10" y="10" width="85" height="48"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Designação Postal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s28-Xu-B94">
+                        <rect key="frame" x="115" y="10" width="289" height="48"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="7aD-OU-HEP" secondAttribute="bottom" constant="10" id="C3h-Fa-D3I"/>
+                    <constraint firstItem="7aD-OU-HEP" firstAttribute="top" secondItem="DsS-fw-AGu" secondAttribute="top" constant="10" id="Hfe-AQ-j9T"/>
+                    <constraint firstItem="s28-Xu-B94" firstAttribute="leading" secondItem="7aD-OU-HEP" secondAttribute="trailing" constant="20" id="LfK-6H-pzj"/>
+                    <constraint firstItem="7aD-OU-HEP" firstAttribute="leading" secondItem="DsS-fw-AGu" secondAttribute="leading" constant="10" id="jOb-zJ-U0S"/>
+                    <constraint firstItem="s28-Xu-B94" firstAttribute="top" secondItem="DsS-fw-AGu" secondAttribute="top" constant="10" id="jXd-mk-fxW"/>
+                    <constraint firstAttribute="trailing" secondItem="s28-Xu-B94" secondAttribute="trailing" constant="10" id="jb9-Be-8DL"/>
+                    <constraint firstAttribute="bottom" secondItem="s28-Xu-B94" secondAttribute="bottom" constant="10" id="maL-bs-JgX"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelDesign" destination="s28-Xu-B94" id="rP3-kE-3kp"/>
+                <outlet property="labelPostalCode" destination="7aD-OU-HEP" id="r7l-Fm-vcc"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="85.714285714285708"/>
+        </tableViewCell>
+    </objects>
+</document>
