@@ -1,5 +1,8 @@
 # WTest-quintao
 
+MAIN Branch as the zip with the project.
+MASTER Branch as the project code to make pushs and pulls.
+
 WTest App - João Quintão
 
 APP FLOW:
